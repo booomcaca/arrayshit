@@ -104,6 +104,7 @@ local ArrayFieldLibrary = {
 	}
 }
 
+return ArrayFieldLibrary
 
 
 -- Services
@@ -2802,6 +2803,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 
 			return ToggleSettings
 		end
+return ArrayFieldLibrary
 
 		-- ColorPicker
 		function Tab:CreateColorPicker(ColorPickerSettings) -- by Throit
@@ -3367,6 +3369,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 	return Window
 end
 
+return ArrayFieldLibrary
 
 function ArrayFieldLibrary:Destroy()
 	ArrayField:Destroy()
@@ -3429,6 +3432,7 @@ UserInputService.InputBegan:Connect(function(input, processed)
 		end
 	end
 end)
+return ArrayFieldLibrary
 
 for _, TopbarButton in ipairs(Topbar:GetChildren()) do
 	if TopbarButton.ClassName == "ImageButton" then
@@ -3452,6 +3456,7 @@ for _, TopbarButton in ipairs(Topbar:GetChildren()) do
 		end)
 	end
 end
+return ArrayFieldLibrary
 
 
 function ArrayFieldLibrary:LoadConfiguration()
